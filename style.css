@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600&display=swap");
-/* BASE */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600&family=Press+Start+2P&display=swap"); /* BASE */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -256,4 +255,32 @@ img {
 .about__button {
   display: flex;
   justify-content: center;
+}
+
+/* SKILL */
+
+.skill__list {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 450px) {
+  .skill__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+.skill__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.skill__icon {
+  font-size: 3rem;
+  color: #576ee0;
+  margin-bottom: 0.5rem;
 }
