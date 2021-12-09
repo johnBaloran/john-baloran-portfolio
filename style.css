@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0 0 3rem 0;
@@ -267,6 +270,7 @@ img {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 2rem;
+  color: #576ee0;
 }
 
 .section__title,
@@ -375,7 +379,7 @@ img {
 .testimonial__container {
   position: relative;
   height: 25vh;
-  transition: 200ms opacity ease-in-out;
+  margin-bottom: 3rem;
 }
 
 .testimonial__content {
@@ -447,4 +451,97 @@ img {
 .testimonial__job-description {
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+/* CONTACT */
+
+.contact__info {
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.contact__list {
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__item {
+  list-style: none;
+  padding: 1rem;
+}
+
+.contact__link {
+  text-decoration: none;
+}
+
+.contact__icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #576ee0;
+}
+
+.contact__form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__form {
+  padding: 1.5rem;
+  width: 90%;
+}
+.contact__input-group {
+  position: relative;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input {
+  padding: 0.7rem;
+  outline: 0;
+  border: 1px solid #576ee0;
+  color: #232429;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.contact__label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5rem;
+  cursor: text;
+  transition: 0.2s;
+}
+
+.contact__button {
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.contact__button:hover .button__icon {
+  transform: translateX(1rem) translateY(-0.8rem);
+}
+
+.contact__input:focus ~ .contact__label,
+.contact__input:valid ~ .contact__label {
+  top: -35px;
+  font-size: 0.8rem;
+}
+
+.contact__label .contact__icon {
+  color: #576ee0;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+.contact__img {
+  border-radius: 50%;
+  padding: 2rem;
 }
