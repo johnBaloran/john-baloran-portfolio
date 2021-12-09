@@ -53,3 +53,16 @@ buttons.forEach((button) => {
     slides[newIndex].classList.add("activeTestimonial");
   });
 });
+
+// Show scroll top
+
+const showScrollTop = () => {
+  const scrollTop = document.getElementById("scroll-up");
+  if (scrollY >= 750) {
+    scrollTop.classList.add("show-scroll");
+  } else {
+    scrollTop.classList.remove("show-scroll");
+  }
+};
+
+window.addEventListener("scroll", showScrollTop);
