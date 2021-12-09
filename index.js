@@ -14,3 +14,24 @@ const closeMenu = () => {
 };
 navClose.addEventListener("click", closeMenu);
 navLink.forEach((link) => link.addEventListener("click", closeMenu));
+
+// Reveal Elements On Scroll
+
+const revealElement = () => {
+  const reveals = document.querySelectorAll(".reveal");
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const revealTop = element.getBoundingClientRect().top;
+    const revealPoint = 150;
+    if (revealTop < windowHeight - revealPoint) {
+      element.classList.add("active");
+    } else {
+      element.classList.remove("active");
+    }
+  });
+};
+
+window.addEventListener("scroll", revealElement);
+
+const windowHeight = window.innerHeight;
+console.log("window", windowHeight);
