@@ -34,4 +34,22 @@ const revealElement = () => {
 window.addEventListener("scroll", revealElement);
 
 const windowHeight = window.innerHeight;
-console.log("window", windowHeight);
+
+// Testimonial Carousel
+
+const buttons = document.querySelectorAll(".testimonial__button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    const offset = e.target.value === "next" ? 1 : -1;
+    const slides = document.querySelectorAll(".testimonial__content");
+    const activeSlide = document.querySelector(".activeTestimonial");
+    let newIndex = [...slides].indexOf(activeSlide) + offset;
+    if (newIndex < 0) newIndex = slides.length - 1;
+    if (newIndex >= slides.length) newIndex = 0;
+    console.log(newIndex);
+
+    activeSlide.classList.remove("activeTestimonial");
+    slides[newIndex].classList.add("activeTestimonial");
+  });
+});

@@ -370,3 +370,81 @@ img {
   transform: translateY(0px);
   opacity: 1;
 }
+
+/* TESTIMONIALS */
+.testimonial__container {
+  position: relative;
+  height: 25vh;
+  transition: 200ms opacity ease-in-out;
+}
+
+.testimonial__content {
+  padding: 1.5rem 2.5rem;
+  position: absolute;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.testimonial__content.activeTestimonial {
+  opacity: 1;
+  transition-delay: 0;
+}
+
+.testimonial__button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  top: 50%;
+  transform: translateY(50%);
+  color: #576ee0;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.testimonial__button:hover,
+.testimonial__button:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.testimonial__button--prev {
+  left: -1rem;
+}
+.testimonial__button--next {
+  right: -1rem;
+}
+
+.testimonial__button:focus {
+  outline: 1px solid black;
+}
+
+.testimonial__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial__profile-img-container {
+  border: solid #576ee0 3px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.testimonial__profile-img {
+  border-radius: 50%;
+}
+
+.testimonial__profile-name {
+  font-size: 1rem;
+}
+
+.testimonial__job-description {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
