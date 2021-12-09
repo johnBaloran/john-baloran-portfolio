@@ -66,3 +66,14 @@ const showScrollTop = () => {
 };
 
 window.addEventListener("scroll", showScrollTop);
+
+// Dark/Light theme color
+
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark";
+const iconTheme = "fa-sun";
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+});
