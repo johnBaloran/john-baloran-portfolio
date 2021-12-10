@@ -23,7 +23,7 @@
 
 body.dark {
   /* HSL color mode */
-  --secondary-color: hsl(var(--hue-color), 30%, 8%); /*#435acb*/
+  --secondary-color: hsl(var(--hue-color), 30%, 80%); /*#435acb*/
   --title-color: hsl(var(--hue-color), 8%, 95%, 1); /*#232429*/
   --text-color: hsl(var(--hue-color), 8%, 75%); /*#6a6d7c*/
   --input-color: hsl(var(--hue-color), 70%, 96%); /*#9fa1ad*/
