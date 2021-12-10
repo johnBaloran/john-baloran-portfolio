@@ -77,3 +77,15 @@ themeButton.addEventListener("click", () => {
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
 });
+
+// change website color by change hue of HSL
+
+const colorWheel = document.getElementById("color-wheel");
+
+colorWheel.addEventListener("click", () => {
+  const color = Math.floor(Math.random() * 360);
+  console.log(color);
+  console.log(document.documentElement.style);
+
+  console.log(document.documentElement.style.setProperty("--hue-color", color));
+});
