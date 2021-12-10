@@ -84,8 +84,5 @@ const colorWheel = document.getElementById("color-wheel");
 
 colorWheel.addEventListener("click", () => {
   const color = Math.floor(Math.random() * 360);
-  console.log(color);
-  console.log(document.documentElement.style);
-
-  console.log(document.documentElement.style.setProperty("--hue-color", color));
+  document.documentElement.style.setProperty("--hue-color", color);
 });

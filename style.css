@@ -780,7 +780,9 @@ img {
   .about__description {
     margin-left: 1rem;
   }
-
+  .project__img-container {
+    width: 20rem;
+  }
   .contact__label {
     font-size: 0.8rem;
     top: 0.4rem;
@@ -853,6 +855,14 @@ img {
     justify-content: initial;
   }
 
+  .project__img-container {
+    width: 25rem;
+  }
+
+  .project__info {
+    text-align: initial;
+  }
+
   .testimonial__comment {
     font-size: 1.4rem;
   }
@@ -889,5 +899,59 @@ img {
 
   .footer__copy {
     margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home__content {
+    column-gap: 1rem;
+  }
+  .home__img-container {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0;
+    position: relative;
+    right: 1rem;
+  }
+  .home__img-container::before {
+    position: absolute;
+    content: "";
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--primary-color);
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+  }
+
+  .home__img {
+    border-radius: 0;
+  }
+
+  .home__social {
+    transform: translateX(-2rem);
+  }
+  .about__img {
+    position: relative;
+    left: 50px;
+    width: 350px;
+    -webkit-box-shadow: -10px 20px 10px 8px var(--secondary-color);
+    box-shadow: -10px 20px 10px 8px var(--secondary-color);
+  }
+
+  .project__content {
+    flex-direction: row;
+    column-gap: 0rem;
+  }
+  .project__content:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .project__img-container {
+    width: 30rem;
+  }
+  .project__info {
+    text-align: initial;
+    flex-basis: 40%;
   }
 }
