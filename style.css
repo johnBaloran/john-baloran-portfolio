@@ -519,8 +519,17 @@ img {
   margin-right: 1rem;
 }
 
+.testimonial__profile-description {
+  position: relative;
+}
+
 .testimonial__profile-img {
   border-radius: 50%;
+}
+
+.testimonial__profile-img-link {
+  position: relative;
+  z-index: 100;
 }
 
 .testimonial__profile-name {
@@ -529,9 +538,25 @@ img {
 }
 
 .testimonial__job-description {
-  font-size: 0.8rem;
   font-weight: 500;
+  font-size: 0.8rem;
   color: var(--text-color);
+}
+
+.testimonial__social-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  position: absolute;
+  z-index: 100;
+}
+
+.testimonial__social-icon:hover {
+  color: var(--secondary-color);
+}
+
+.testimonial__comment-container {
+  margin-top: 2rem;
 }
 
 /* CONTACT */
@@ -748,6 +773,9 @@ img {
 
   .project__img-container {
     width: 12rem;
+  }
+  .footer__copy {
+    margin-top: 3rem;
   }
 }
 
