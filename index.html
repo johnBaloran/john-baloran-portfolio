@@ -1,502 +1,439 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Responsive Portfolio Website</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header" id="header">
-      <nav class="nav wrapper">
-        <a href="#" class="nav__logo">Portfolio</a>
+<html lang="en">
 
-        <div class="nav__menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="fas fa-home nav__icon"></i> Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="fas fa-user nav__icon"></i> About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills " class="nav__link">
-                <i class="fas fa-suitcase nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">
-                <i class="fas fa-laptop-code nav__icon"></i> Projects
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link"
-                ><i class="fas fa-inbox nav__icon"></i> Contact</a
-              >
-            </li>
-          </ul>
-          <i class="fas fa-times nav__close"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Responsive Portfolio Website</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav wrapper">
+      <a href="#" class="nav__logo">John</a>
+
+      <div class="nav__menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="fas fa-home nav__icon"></i> Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="fas fa-user nav__icon"></i> About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills " class="nav__link">
+              <i class="fas fa-suitcase nav__icon"></i> Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="fas fa-laptop-code nav__icon"></i> Projects
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link"><i class="fas fa-inbox nav__icon"></i> Contact</a>
+          </li>
+        </ul>
+        <i class="fas fa-times nav__close"></i>
+      </div>
+      <div class="nav__btns">
+
+        <div class="nav__toggle">
+          <i class="fas fa-border-all"></i>
         </div>
-        <div class="nav__btns">
+      </div>
+    </nav>
+  </header>
 
-          <div class="nav__toggle">
-            <i class="fas fa-border-all"></i>
+  <!-- change theme colors -->
+  <div class="change-display">
+
+    <i class="fas fa-palette color-wheel" id="color-wheel"></i>
+    <i class="fas fa-moon change-theme" id="theme-button"></i>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- HOME -->
+    <section class="home section" id="home">
+      <div class="home__container wrapper grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/johnbaloran/" class="home__social-icon" target="_blank"><i
+                class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="home__social-icon" target="_blank"><i class="fas fa-file"></i>
+            </a>
+            <a href="https://www.github.com/johnBaloran" class="home__social-icon" target="_blank">
+              <i class="fab fa-github"></i></a>
+          </div>
+          <div class="home__img-container">
+            <img class="home__img" src="./assets/profile-pic.jpg" alt="profile-pic" />
+          </div>
+          <div class="home__profile">
+            <h1 class="home__title">
+              Hi, I am <span class="home__name">John</span>
+            </h1>
+            <h3 class="home__subtitle">Frontend Developer</h3>
+            <p class="home__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+              quisquam repudiandae magnam quasi tenetur perspiciatis odit
+              quia. Cupiditate, tenetur laborum?
+            </p>
+            <a href="#contact" class="button button--flex">
+              Say Hello <span class="button__icon hand-wave">👋</span>
+            </a>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-<!-- change theme colors -->
-<div class="change-display">
-  
-  <i class="fas fa-palette color-wheel" id="color-wheel"></i>
-  <i class="fas fa-moon change-theme" id="theme-button"></i>
-</div>
-
-    <!-- MAIN -->
-    <main class="main">
-      <!-- HOME -->
-      <section class="home section" id="home">
-        <div class="home__container wrapper grid">
-          <div class="home__content grid">
-            <div class="home__social">
-              <a
-                href="https://www.linkedin.com/in/johnbaloran/"
-                class="home__social-icon"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#" class="home__social-icon" target="_blank"
-                ><i class="fas fa-file"></i>
-              </a>
-              <a
-                href="https://www.github.com/johnBaloran"
-                class="home__social-icon"
-                target="_blank"
-              >
-                <i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="home__img-container">
-              <img
-                class="home__img"
-                src="./assets/profile-pic.jpg"
-                alt="profile-pic"
-              />
-            </div>
-            <div class="home__profile">
-              <h1 class="home__title">
-                Hi, I am <span class="home__name">John</span>
-              </h1>
-              <h3 class="home__subtitle">Frontend Developer</h3>
-              <p class="home__description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
-                quisquam repudiandae magnam quasi tenetur perspiciatis odit
-                quia. Cupiditate, tenetur laborum?
-              </p>
-              <a href="#contact" class="button button--flex">
-                Say Hello <span class="button__icon hand-wave">👋</span>
-              </a>
-            </div>
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My introduction</span>
+      <figure class="about__container wrapper grid">
+        <img class="about__img" src="./assets/aboutme-pic.jpg" alt="" />
+        <figcaption class="about__info">
+          <p class="about__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            possimus excepturi velit, saepe a iusto illo, sint, laborum modi
+            distinctio facere doloribus accusamus. Quasi, molestiae! Ipsa
+            fugiat sed cupiditate soluta.
+          </p>
+          <div class="about__button">
+            <a href="#" class="button button--flex">Download CV <i class="fas fa-download button__icon"></i></a>
           </div>
-        </div>
-      </section>
+        </figcaption>
+      </figure>
 
-      <!-- ABOUT -->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
-        <figure class="about__container wrapper grid">
-          <img class="about__img" src="./assets/aboutme-pic.jpg" alt="" />
-          <figcaption class="about__info">
-            <p class="about__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              possimus excepturi velit, saepe a iusto illo, sint, laborum modi
-              distinctio facere doloribus accusamus. Quasi, molestiae! Ipsa
-              fugiat sed cupiditate soluta.
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skill section" id="skill">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My tools</span>
+      <div class="skill__container wrapper">
+        <ul class="skill__list grid">
+          <li class="skill__item">
+            <i class="fab fa-react skill__icon"></i> React
+          </li>
+          <li class="skill__item">
+            <i class="fab fa-js skill__icon"></i> Javascript
+          </li>
+          <li class="skill__item">
+            <i class="fas fa-fire skill__icon"></i>
+            Firebase
+          </li>
+          <li class="skill__item">
+            <i class="fas fa-cogs skill__icon"></i>
+            RESTful APIs
+          </li>
+          <li class="skill__item">
+            <i class="fab fa-html5 skill__icon"></i> HTML5
+          </li>
+          <li class="skill__item">
+            <i class="fab fa-css3-alt skill__icon"></i> CSS3
+          </li>
+          <li class="skill__item">
+            <i class="fab fa-sass skill__icon"></i> SASS
+          </li>
+          <li class="skill__item">
+            <i class="fas fa-tablet-alt skill__icon"></i> Responsive Design
+          </li>
+          <li class="skill__item">
+            <i class="fas fa-users skill__icon"></i>
+            Paired/Mob Programming
+          </li>
+          <li class="skill__item">
+            <i class="fab fa-git-alt skill__icon"></i> Git
+          </li>
+          <li class="skill__item">
+            <i class="fab fa-github skill__icon"></i> Github
+          </li>
+          <li class="skill__item">
+            <i class="fas fa-universal-access skill__icon"></i> Accessibility
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project section" id="project">
+      <h2 class="section__title">Projects</h2>
+      <span class="section__subtitle">Most recent work</span>
+      <div class="project__container wrapper">
+        <figure class="project__content reveal">
+          <div class="project__img-container">
+            <img src="./assets/project-example.png" alt="project" class="project__img" />
+          </div>
+          <figcaption class="project__info">
+            <h3 class="project__title">Smooth Landing</h3>
+            <h4 class="project__tools">
+              React-Router | API Integration | Firebase | Mob Programming |
+              CSS3 | HTML5
+            </h4>
+            <p class="project__description">
+              A single page web application that creates landing pages for
+              clients in less than 5 minutes. Clients are able to copy and
+              paste generated code for any slected landing page. Working with
+              the Unsplash API, clients are able to choose from a variety of
+              background images. All data is saved to a firebase database for
+              future use.
             </p>
           </figcaption>
+          <div class="project__buttons">
+            <a href="" class="button button--flex button--small project__button">Repo</a>
+            <a href="" class="button button--flex button--small project__button">
+              Live <i class="fas fa-arrow-right button__icon"></i></a>
+          </div>
         </figure>
-        <div class="about__button">
-          <a href="#" class="button button--flex"
-            >Download CV <i class="fas fa-download button__icon"></i
-          ></a>
-        </div>
-      </section>
+        <figure class="project__content reveal">
+          <div class="project__img-container">
+            <img src="./assets/project-example.png" alt="project" class="project__img" />
+          </div>
+          <figcaption class="project__info">
+            <h3 class="project__title">TODO-TODAY</h3>
+            <h4 class="project__tools">React | Firebase | CSS3 | HTML5</h4>
+            <p class="project__description">
+              A classic CRUD todo app that utilizes a form to retrieve and
+              return data from a database. Created using React Hooks to add,
+              delete, and edit user input while data is connected to Firebase.
+            </p>
+          </figcaption>
+          <div class="project__buttons">
+            <a href="" class="button button--flex button--small project__button">Repo</a>
+            <a href="" class="button button--flex button--small project__button">
+              Live <i class="fas fa-arrow-right button__icon"></i></a>
+          </div>
+        </figure>
+        <figure class="project__content reveal">
+          <div class="project__img-container">
+            <img src="./assets/project-example.png" alt="project" class="project__img" />
+          </div>
+          <figcaption class="project__info">
+            <h3 class="project__title">Our Pantry</h3>
+            <h4 class="project__tools">
+              Javascript | API Integration | Paired Programming | SCSS | CSS3
+              | HTML5
+            </h4>
+            <p class="project__description">
+              A functional web application that renders a recipe from the
+              spoonacular API based on the user's available ingredients in
+              real-time.
+            </p>
+          </figcaption>
+          <div class="project__buttons">
+            <a href="" class="button button--flex button--small project__button">Repo</a>
+            <a href="" class="button button--flex button--small project__button">
+              Live <i class="fas fa-arrow-right button__icon"></i></a>
+          </div>
+        </figure>
+      </div>
+    </section>
 
-      <!-- SKILLS -->
-      <section class="skill section" id="skill">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My tools</span>
-        <div class="skill__container wrapper">
-          <ul class="skill__list grid">
-            <li class="skill__item">
-              <i class="fab fa-react skill__icon"></i> React
+    <!-- TESTIMONIAL -->
+    <section class="testimonial section">
+      <h2 class="section__title">Testimonials</h2>
+      <span class="section__subtitle">What people are saying</span>
+      <div class="testimonial__container wrapper">
+        <button class="testimonial__button testimonial__button--prev" value="prev">&#8656</button>
+        <button class="testimonial__button testimonial__button--next" value="next">&#8658</button>
+
+        <div class="testimonial__content activeTestimonial">
+          <div class="testimonial__profile">
+            <div class="testimonial__profile-img-container">
+              <img src="./assets/Emily-Miernik.png" alt="web developer testimonial" class="testimonial__profile-img" />
+            </div>
+            <div class="testimonial__profile-description">
+              <h3 class="testimonial__profile-name">Emily Miernik</h3>
+              <h4 class="testimonial__job-description">
+                Front End Developer
+              </h4>
+            </div>
+          </div>
+          <div class="testimonial__comment-container">
+            <p class="testimonial__comment">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+              ipsum corrupti atque non vitae doloremque reprehenderit ab optio
+              doloribus nemo!
+            </p>
+          </div>
+        </div>
+        <div class="testimonial__content">
+          <div class="testimonial__profile">
+            <div class="testimonial__profile-img-container">
+              <img src="./assets/Hayden-Crocker.jpg" alt="web developer testimonial" class="testimonial__profile-img" />
+            </div>
+            <div class="testimonial__profile-description">
+              <h3 class="testimonial__profile-name">Hayden Crocker</h3>
+              <h4 class="testimonial__job-description">
+                Front End Developer
+              </h4>
+            </div>
+          </div>
+          <div class="testimonial__comment-container">
+            <p class="testimonial__comment">
+              Former chef turned web developer. Taking the fuel that drove my culinary art and refactoring it towards
+              fresh web development.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial__content">
+          <div class="testimonial__profile">
+            <div class="testimonial__profile-img-container">
+              <img src="./assets/Brenton-Pedler.jpg" alt="web developer testimonial" class="testimonial__profile-img" />
+            </div>
+            <div class="testimonial__profile-description">
+              <h3 class="testimonial__profile-name">Brenton Pedler</h3>
+              <h4 class="testimonial__job-description">
+                Front End Developer
+              </h4>
+            </div>
+          </div>
+          <div class="testimonial__comment-container">
+            <p class="testimonial__comment">
+              I had the pleasure of collaborating with John on a team React project. Not only was he easy to work with
+              but his technical knowledge was a huge benefit to our team.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+      <div class="contact__container wrapper grid">
+        <div class="contact__content">
+          <div class="contact__img-container">
+            <img src="./assets/contactme-pic.jpg" alt="picture of John sitting down posing" class="contact__img">
+          </div>
+          <div class="contact__info">
+            <p class="contact__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint, molestias officia rem alias
+              consequuntur eos eaque id error dicta, quisquam ipsum aperiam atque beatae.
+            </p>
+          </div>
+          <div class="contact__list grid">
+            <li class="contact__item">
+              <a href="#" class="contact__link">
+                <i class="fas fa-envelope contact__icon"></i>
+              </a>
             </li>
-            <li class="skill__item">
-              <i class="fab fa-js skill__icon"></i> Javascript
+            <li class="contact__item">
+              <a href="#" class="contact__link">
+                <i class="far fa-calendar-alt contact__icon"></i>
+              </a>
             </li>
-            <li class="skill__item">
-              <i class="fas fa-fire skill__icon"></i>
-              Firebase
+            <li class="contact__item">
+              <a href="#" class="contact__link">
+                <i class="fa fa-linkedin contact__icon"></i>
+              </a>
             </li>
-            <li class="skill__item">
-              <i class="fas fa-cogs skill__icon"></i>
-              RESTful APIs
+            <li class="contact__item">
+              <a href="#" class="contact__link">
+                <i class="fa fa-github contact__icon"></i>
+              </a>
             </li>
-            <li class="skill__item">
-              <i class="fab fa-html5 skill__icon"></i> HTML5
+          </div>
+
+
+        </div>
+        <div class="contact__form-container">
+
+
+          <form action="submit" class="contact__form">
+            <div class="contact__input-group">
+              <input type="text" class="contact__input contact__name" id="name" required>
+              <label class="contact__label" for="name"><i class="fas fa-user contact__icon"></i> Your Name</label>
+            </div>
+            <div class="contact__input-group">
+              <input type="text" class="contact__input contact__number" id="number" required>
+              <label class="contact__label" for="number"><i class="fas fa-phone-square-alt contact__icon"></i> Phone
+                Number</label>
+            </div>
+            <div class="contact__input-group">
+              <input type="text" class="contact__input contact__email" id="email" required>
+              <label class="contact__label" for="email"><i class="fas fa-envelope contact__icon"></i> Email
+                Address</label>
+            </div>
+            <div class="contact__input-group">
+              <textarea type="text" class="contact__input contact__text-area" id="message" rows="8" required></textarea>
+              <label class="contact__label" for="message"><i class="fas fa-comments contact__icon"></i> Your
+                Message</label>
+            </div>
+            <button class="contact__button button button--flex" type="submit">Submit <i
+                class="fas fa-paper-plane button__icon"></i></button>
+          </form>
+        </div>
+
+
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bg">
+
+
+
+
+      <div class="footer__container wrapper ">
+        <div class="footer__content grid">
+          <div class="div__footer-name">
+            <h2 class="footer__title">
+              John </h2>
+            <span class="footer__subtitle">Frontend Developer</span>
+          </div>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#about" class="footer__link">About</a>
             </li>
-            <li class="skill__item">
-              <i class="fab fa-css3-alt skill__icon"></i> CSS3
+            <li class="footer__item">
+              <a href="#project" class="footer__link">Projects</a>
             </li>
-            <li class="skill__item">
-              <i class="fab fa-sass skill__icon"></i> SASS
-            </li>
-            <li class="skill__item">
-              <i class="fas fa-tablet-alt skill__icon"></i> Responsive Design
-            </li>
-            <li class="skill__item">
-              <i class="fas fa-users skill__icon"></i>
-              Paired/Mob Programming
-            </li>
-            <li class="skill__item">
-              <i class="fab fa-git-alt skill__icon"></i> Git
-            </li>
-            <li class="skill__item">
-              <i class="fab fa-github skill__icon"></i> Github
-            </li>
-            <li class="skill__item">
-              <i class="fas fa-universal-access skill__icon"></i> Accessibility
+            <li class="footer__item">
+              <a href="#contact" class="footer__link">Contact</a>
             </li>
           </ul>
-        </div>
-      </section>
 
-      <!-- PROJECTS -->
-      <section class="project section" id="project">
-        <h2 class="section__title">Projects</h2>
-        <span class="section__subtitle">Most recent work</span>
-        <div class="project__container wrapper">
-          <figure class="project__content reveal">
-            <div class="project__img-container">
-              <img
-                src="./assets/project-example.png"
-                alt="project"
-                class="project__img"
-              />
-            </div>
-            <figcaption class="project__info">
-              <h3 class="project__title">Smooth Landing</h3>
-              <h4 class="project__tools">
-                React-Router | API Integration | Firebase | Mob Programming |
-                CSS3 | HTML5
-              </h4>
-              <p class="project__description">
-                A single page web application that creates landing pages for
-                clients in less than 5 minutes. Clients are able to copy and
-                paste generated code for any slected landing page. Working with
-                the Unsplash API, clients are able to choose from a variety of
-                background images. All data is saved to a firebase database for
-                future use.
-              </p>
-            </figcaption>
-            <div class="project__buttons">
-              <a
-                href=""
-                class="button button--flex button--small project__button"
-                >Repo</a
-              >
-              <a
-                href=""
-                class="button button--flex button--small project__button"
-              >
-                Live <i class="fas fa-arrow-right button__icon"></i
-              ></a>
-            </div>
-          </figure>
-          <figure class="project__content reveal">
-            <div class="project__img-container">
-              <img
-                src="./assets/project-example.png"
-                alt="project"
-                class="project__img"
-              />
-            </div>
-            <figcaption class="project__info">
-              <h3 class="project__title">TODO-TODAY</h3>
-              <h4 class="project__tools">React | Firebase | CSS3 | HTML5</h4>
-              <p class="project__description">
-                A classic CRUD todo app that utilizes a form to retrieve and
-                return data from a database. Created using React Hooks to add,
-                delete, and edit user input while data is connected to Firebase.
-              </p>
-            </figcaption>
-            <div class="project__buttons">
-              <a
-                href=""
-                class="button button--flex button--small project__button"
-                >Repo</a
-              >
-              <a
-                href=""
-                class="button button--flex button--small project__button"
-              >
-                Live <i class="fas fa-arrow-right button__icon"></i
-              ></a>
-            </div>
-          </figure>
-          <figure class="project__content reveal">
-            <div class="project__img-container">
-              <img
-                src="./assets/project-example.png"
-                alt="project"
-                class="project__img"
-              />
-            </div>
-            <figcaption class="project__info">
-              <h3 class="project__title">Our Pantry</h3>
-              <h4 class="project__tools">
-                Javascript | API Integration | Paired Programming | SCSS | CSS3
-                | HTML5
-              </h4>
-              <p class="project__description">
-                A functional web application that renders a recipe from the
-                spoonacular API based on the user's available ingredients in
-                real-time.
-              </p>
-            </figcaption>
-            <div class="project__buttons">
-              <a
-                href=""
-                class="button button--flex button--small project__button"
-                >Repo</a
-              >
-              <a
-                href=""
-                class="button button--flex button--small project__button"
-              >
-                Live <i class="fas fa-arrow-right button__icon"></i
-              ></a>
-            </div>
-          </figure>
-        </div>
-      </section>
-
-      <!-- TESTIMONIAL -->
-      <section class="testimonial section">
-        <h2 class="section__title">Testimonials</h2>
-        <span class="section__subtitle">What people are saying</span>
-        <div class="testimonial__container wrapper">
-          <button class="testimonial__button testimonial__button--prev" value="prev">&#8656</button>
-          <button class="testimonial__button testimonial__button--next" value="next">&#8658</button>
-
-          <div class="testimonial__content activeTestimonial">
-            <div class="testimonial__profile">
-              <div class="testimonial__profile-img-container">
-                <img
-                  src="./assets/Emily-Miernik.png"
-                  alt="web developer testimonial"
-                  class="testimonial__profile-img"
-                />
-              </div>
-              <div class="testimonial__profile-description">
-                <h3 class="testimonial__profile-name">Emily Miernik</h3>
-                <h4 class="testimonial__job-description">
-                  Front End Developer
-                </h4>
-              </div>
-            </div>
-            <div class="testimonial__comment-container">
-              <p class="testimonial__comment">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
-                ipsum corrupti atque non vitae doloremque reprehenderit ab optio
-                doloribus nemo!
-              </p>
-            </div>
-          </div>
-          <div class="testimonial__content">
-            <div class="testimonial__profile">
-              <div class="testimonial__profile-img-container">
-                <img
-                  src="./assets/Hayden-Crocker.jpg"
-                  alt="web developer testimonial"
-                  class="testimonial__profile-img"
-                />
-              </div>
-              <div class="testimonial__profile-description">
-                <h3 class="testimonial__profile-name">Hayden Crocker</h3>
-                <h4 class="testimonial__job-description">
-                  Front End Developer
-                </h4>
-              </div>
-            </div>
-            <div class="testimonial__comment-container">
-              <p class="testimonial__comment">
-                Former chef turned web developer. Taking the fuel that drove my culinary art and refactoring it towards fresh web development.
-              </p>
-            </div>
-          </div>
-          <div class="testimonial__content">
-            <div class="testimonial__profile">
-              <div class="testimonial__profile-img-container">
-                <img
-                  src="./assets/Brenton-Pedler.jpg"
-                  alt="web developer testimonial"
-                  class="testimonial__profile-img"
-                />
-              </div>
-              <div class="testimonial__profile-description">
-                <h3 class="testimonial__profile-name">Brenton Pedler</h3>
-                <h4 class="testimonial__job-description">
-                  Front End Developer
-                </h4>
-              </div>
-            </div>
-            <div class="testimonial__comment-container">
-              <p class="testimonial__comment">
-                I had the pleasure of collaborating with John on a team React project. Not only was he easy to work with but his technical knowledge was a huge benefit to our team.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- CONTACT ME -->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
-        <div class="contact__container wrapper">
-          <div class="contact__content">
-            <div class="contact__img-container">
-              <img src="./assets/contactme-pic.jpg" alt="picture of John sitting down posing" class="contact__img">
-            </div>
-<div class="contact__info">
-  <p class="contact__description">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint, molestias officia rem alias consequuntur eos eaque id error dicta, quisquam ipsum aperiam atque beatae.
-  </p>
-</div>
-<div class="contact__list grid">
-  <li class="contact__item">
-    <a href="#" class="contact__link">
-      <i class="fas fa-envelope contact__icon"></i>
-    </a>
-  </li>
-  <li class="contact__item">
-    <a href="#" class="contact__link">
-      <i class="far fa-calendar-alt contact__icon"></i>
-    </a>
-  </li>
-  <li class="contact__item">
-    <a href="#" class="contact__link">
-      <i class="fa fa-linkedin contact__icon"></i>
-    </a>
-  </li>
-  <li class="contact__item">
-    <a href="#" class="contact__link">
-      <i class="fa fa-github contact__icon"></i>
-    </a>
-  </li>
-</div>
-
-
-<div class="contact__form-container">
-
-
-  <form action="submit" class="contact__form">
-   <div class="contact__input-group">
-     <input type="text" class="contact__input contact__name" id="name" required>
-     <label class="contact__label" for="name"><i class="fas fa-user contact__icon"></i> Your Name</label>
-   </div>
-   <div class="contact__input-group">
-     <input type="text" class="contact__input contact__number" id="number" required>
-     <label class="contact__label" for="number"><i class="fas fa-phone-square-alt contact__icon"></i> Phone Number</label>
-   </div>
-   <div class="contact__input-group">
-     <input type="text" class="contact__input contact__email" id="email" required>
-     <label class="contact__label" for="email"><i class="fas fa-envelope contact__icon"></i> Email Address</label>
-   </div>
-   <div class="contact__input-group">
-     <textarea type="text" class="contact__input contact__text-area" id="message" rows="8" required></textarea>
-     <label class="contact__label" for="message"><i class="fas fa-comments contact__icon"></i> Your Message</label>
-   </div>
-   <button class="contact__button button button--flex" type="submit">Submit <i class="fas fa-paper-plane button__icon"></i></button>
-  </form> 
-</div>
-
-
- 
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/johnbaloran/" class="footer__social-icon" target="_blank"><i
+                class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="footer__social-icon" target="_blank"><i class="fas fa-file"></i>
+            </a>
+            <a href="https://www.github.com/johnBaloran" class="footer__social-icon" target="_blank">
+              <i class="fab fa-github"></i></a>
           </div>
         </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__bg">
-
-
-
-      
-        <div class="footer__container wrapper grid">
-<div class="footer__content">
-  <h2 class="footer__title">
-    John </h2>
-    <span class="footer__subtitle">Frontend Developer</span>
-  <ul class="footer__list">
-<li class="footer__item">
-  <a href="#about" class="footer__link">About</a>
-</li>
-<li class="footer__item">
-  <a href="#project" class="footer__link">Projects</a>
-</li>
-<li class="footer__item">
-  <a href="#contact" class="footer__link">Contact</a>
-</li>
-  </ul>
-
-  <div class="footer__social">
-    <a
-      href="https://www.linkedin.com/in/johnbaloran/"
-      class="footer__social-icon"
-      target="_blank"
-      ><i class="fab fa-linkedin"></i>
-    </a>
-    <a href="#" class="footer__social-icon" target="_blank"
-      ><i class="fas fa-file"></i>
-    </a>
-    <a
-      href="https://www.github.com/johnBaloran"
-      class="footer__social-icon"
-      target="_blank"
-    >
-      <i class="fab fa-github"></i
-    ></a>
-  </div>
-</div>
-<p class="footer__copy">Designed and Developed by John Baloran © 2021 </p>
-</div>
+        <p class="footer__copy">Designed and Developed by John Baloran © 2021 </p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- SCROLL TOP -->
-<a href="#" class="scroll-up" id="scroll-up">
-  <i class="fas fa-arrow-up scroll-up__icon"></i>
-</a>
+  <!-- SCROLL TOP -->
+  <a href="#" class="scroll-up" id="scroll-up">
+    <i class="fas fa-arrow-up scroll-up__icon"></i>
+  </a>
 
 
 
-    <!-- MAIN JS -->
-    <script
-      src="https://kit.fontawesome.com/456be152d4.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./index.js"></script>
-  </body>
+  <!-- MAIN JS -->
+  <script src="https://kit.fontawesome.com/456be152d4.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
