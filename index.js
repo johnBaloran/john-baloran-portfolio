@@ -86,3 +86,28 @@ colorWheel.addEventListener("click", () => {
   const color = Math.floor(Math.random() * 360);
   document.documentElement.style.setProperty("--hue-color", color);
 });
+
+// change device to check responsive design
+// grab icons in the dom
+const desktopIcon = document.querySelectorAll(".project__img-icon--desktop");
+const mobileIcon = document.querySelectorAll(".project__img-icon--mobile");
+// grab project images div
+
+const projectContainer = document.querySelectorAll(".project__img-div");
+
+// add event click listeners to icons
+desktopIcon.forEach((icon) => {
+  icon.addEventListener("click", (e) => {
+    const value = e.target.dataset.value;
+    projectContainer[value].children[0].classList.add("active");
+    projectContainer[value].children[1].classList.remove("active");
+  });
+});
+
+mobileIcon.forEach((icon) => {
+  icon.addEventListener("click", (e) => {
+    const value = e.target.dataset.value;
+    projectContainer[value].children[1].classList.add("active");
+    projectContainer[value].children[0].classList.remove("active");
+  });
+});

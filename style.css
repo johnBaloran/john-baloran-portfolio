@@ -237,10 +237,34 @@ img {
   border: solid var(--primary-color) 4px;
   border-radius: 50%;
   margin: 0 auto 2rem;
+  position: relative;
 }
 
 .home__img {
   border-radius: 50%;
+}
+
+.home__heart-btn {
+  position: absolute;
+  bottom: -6rem;
+}
+
+.home__heart-btn .content {
+  padding: 10px 13px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home__heart-btn .content .heart {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  color: var(--primary-color);
+}
+.home__heart-btn .content .number {
+  color: var(--text-color);
 }
 
 .home__profile {
@@ -414,6 +438,38 @@ img {
   width: 265px;
   border-radius: 0.5rem;
   margin: 1.5rem auto;
+  position: relative;
+}
+
+.project__img {
+  display: none;
+}
+
+.project__img--mobile {
+  width: 7rem;
+  margin: 0 auto;
+}
+
+.project__img.active {
+  display: block;
+}
+
+.project__img-icons {
+  display: flex;
+  width: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  color: var(--primary-color);
+}
+.project__img-icon {
+  cursor: pointer;
+}
+.project__img-icon:hover,
+.project__img-icon:focus {
+  color: var(--secondary-color);
 }
 
 .project__info {
@@ -771,9 +827,10 @@ img {
     margin-bottom: 3rem;
   }
 
-  .project__img-container {
+  .project__img-desktop {
     width: 12rem;
   }
+
   .footer__copy {
     margin-top: 3rem;
   }
@@ -808,9 +865,7 @@ img {
   .about__description {
     margin-left: 1rem;
   }
-  .project__img-container {
-    width: 20rem;
-  }
+
   .contact__label {
     font-size: 0.8rem;
     top: 0.4rem;
@@ -885,6 +940,9 @@ img {
 
   .project__img-container {
     width: 25rem;
+  }
+  .project__img--mobile {
+    width: 10rem;
   }
 
   .project__info {
