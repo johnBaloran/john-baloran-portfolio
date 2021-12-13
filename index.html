@@ -27,13 +27,18 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="#skills " class="nav__link">
+            <a href="#skill " class="nav__link">
               <i class="fas fa-suitcase nav__icon"></i> Skills
             </a>
           </li>
           <li class="nav__item">
-            <a href="#projects" class="nav__link">
+            <a href="#project" class="nav__link">
               <i class="fas fa-laptop-code nav__icon"></i> Projects
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#testimonial" class="nav__link">
+              <i class="fas fa-comment-dots nav__icon"></i> Testimonials
             </a>
           </li>
           <li class="nav__item">
@@ -177,10 +182,10 @@
               <i class="fas fa-laptop project__img-icon project__img-icon--desktop" data-value="0"></i>
             </div>
             <div class="project__img-div">
-              <video loop autoplay controls class="project__img project__img--desktop active">
+              <video loop autoplay muted controls class="project__img project__img--desktop active">
                 <source src="./assets/macbook1.mp4" type="video/mp4" />
               </video>
-              <video loop autoplay controls class="project__img project__img--mobile">
+              <video loop autoplay muted controls class="project__img project__img--mobile">
                 <source src="./assets/iphone1.mp4" type="video/mp4" />
               </video>
             </div>
@@ -213,8 +218,12 @@
               <i class="fas fa-laptop project__img-icon project__img-icon--desktop" data-value="1"></i>
             </div>
             <div class="project__img-div">
-              <img src="./assets/macbook.png" alt="project" class="project__img project__img--desktop active" />
-              <img src="./assets/iphone.png" alt="project" class="project__img project__img--mobile" />
+              <video loop autoplay muted controls class="project__img project__img--desktop active">
+                <source src="./assets/todo-today-desktop.mp4" type="video/mp4" />
+              </video>
+              <video loop autoplay muted controls class="project__img project__img--mobile">
+                <source src="./assets/todo-today-mobile.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
           <figcaption class="project__info">
@@ -239,8 +248,12 @@
               <i class="fas fa-laptop project__img-icon project__img-icon--desktop" data-value="2"></i>
             </div>
             <div class="project__img-div">
-              <img src="./assets/macbook.png" alt="project" class="project__img project__img--desktop active" />
-              <img src="./assets/iphone.png" alt="project" class="project__img project__img--mobile" />
+              <video loop autoplay muted controls class="project__img project__img--desktop active">
+                <source src="./assets/ourpantry-desktop.mp4" type="video/mp4" />
+              </video>
+              <video loop autoplay muted controls class="project__img project__img--mobile">
+                <source src="./assets/ourpantry-mobile.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
           <figcaption class="project__info">
@@ -265,7 +278,7 @@
     </section>
 
     <!-- TESTIMONIAL -->
-    <section class="testimonial section">
+    <section class="testimonial section" id="testimonial">
       <h2 class="section__title">Testimonials</h2>
       <span class="section__subtitle">What people are saying</span>
       <div class="testimonial__container wrapper">
@@ -374,22 +387,22 @@
           </div>
           <div class="contact__list grid">
             <li class="contact__item">
-              <a href="#" class="contact__link">
+              <a href="#" class="contact__link" target="_blank">
                 <i class="fas fa-envelope contact__icon"></i>
               </a>
             </li>
             <li class="contact__item">
-              <a href="#" class="contact__link">
+              <a href="#" class="contact__link" target="_blank">
                 <i class="far fa-calendar-alt contact__icon"></i>
               </a>
             </li>
             <li class="contact__item">
-              <a href="#" class="contact__link">
+              <a href="https://www.linkedin.com/in/johnbaloran/" class="contact__link" target="_blank">
                 <i class="fa fa-linkedin contact__icon"></i>
               </a>
             </li>
             <li class="contact__item">
-              <a href="#" class="contact__link">
+              <a href="https://www.github.com/johnBaloran" class="contact__link" target="_blank">
                 <i class="fa fa-github contact__icon"></i>
               </a>
             </li>
