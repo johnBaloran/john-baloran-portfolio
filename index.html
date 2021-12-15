@@ -84,13 +84,13 @@
           </div>
           <div class="home__profile">
             <h1 class="home__title">
-              Hi, I am <span class="home__name">John</span>
+              Hello world, I am <span class="home__name">John</span>
             </h1>
-            <h3 class="home__subtitle">Frontend Developer</h3>
+            <h3 class="home__subtitle">Front-End Developer</h3>
             <p class="home__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
-              quisquam repudiandae magnam quasi tenetur perspiciatis odit
-              quia. Cupiditate, tenetur laborum?
+              I have a passion for writing clean, dry, and structured code to build accessible and responsive web
+              applications. I have a deep curiosity for learning more about web development and am excited to make an
+              impact on the way people's lives are affected by it.
             </p>
             <a href="#contact" class="button button--flex">
               Say Hello <span class="button__icon hand-wave">👋</span>
@@ -108,10 +108,16 @@
         <img class="about__img" src="./assets/aboutme-pic.jpg" alt="" />
         <figcaption class="about__info">
           <p class="about__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            possimus excepturi velit, saepe a iusto illo, sint, laborum modi
-            distinctio facere doloribus accusamus. Quasi, molestiae! Ipsa
-            fugiat sed cupiditate soluta.
+            Before my Web Developer chapter, I was a Kinesiology student at York University. The program
+            focused on
+            physical activity and how the human body's movement impacts health, well-being and quality of life. I left
+            that
+            role with a strong ability to address challenging problems and issues through: creative thinking, inquiry,
+            innovation, analysis, evaluation, and synthesis of information including numerical data or observable facts.
+            <br>
+            To begin my career change, I completed Juno College's Web Immersive Bootcamp where I completed 5 projects.
+            independently and on a team. I now confidently use my skills in HTML, CSS, and JavaScript as well as other
+            front end technologies to build accessible and responsive applications.
           </p>
           <div class="about__button">
             <a href="#" class="button button--flex">Download CV <i class="fas fa-download button__icon"></i></a>
@@ -199,7 +205,7 @@
             <p class="project__description">
               A single page web application that creates landing pages for
               clients in less than 5 minutes. Clients are able to copy and
-              paste generated code for any slected landing page. Working with
+              paste generated code for any selected landing page. Working with
               the Unsplash API, clients are able to choose from a variety of
               background images. All data is saved to a firebase database for
               future use.
@@ -269,7 +275,7 @@
             <p class="project__description">
               A functional web application that renders a recipe from the
               spoonacular API based on the user's available ingredients in
-              real-time.
+              their pantry or kitchen.
             </p>
             <div class="project__buttons">
               <a href="https://github.com/John-Baloran-Emily-Miernik-Project2/john-baloran-emily-miernik-project-two"
@@ -387,8 +393,11 @@
           </div>
           <div class="contact__info">
             <p class="contact__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint, molestias officia rem alias
-              consequuntur eos eaque id error dicta, quisquam ipsum aperiam atque beatae.
+              I am based out of the Greater Toronto Area and available for full-time work. If you have any questions
+              about me, my projects, or anything fitness related, feel free to schedule a meeting via my
+              Calendly or message me through the links below. You
+              could also send
+              me a message here!
             </p>
           </div>
           <div class="contact__list grid">
@@ -418,29 +427,29 @@
         </div>
         <div class="contact__form-container">
 
-
-          <form action="submit" class="contact__form">
-            <div class="contact__input-group">
-              <input type="text" class="contact__input contact__name" id="name" required>
-              <label class="contact__label" for="name"><i class="fas fa-user contact__icon"></i> Your Name</label>
-            </div>
-            <div class="contact__input-group">
-              <input type="text" class="contact__input contact__number" id="number" required>
-              <label class="contact__label" for="number"><i class="fas fa-phone-square-alt contact__icon"></i> Phone
-                Number</label>
-            </div>
-            <div class="contact__input-group">
-              <input type="text" class="contact__input contact__email" id="email" required>
-              <label class="contact__label" for="email"><i class="fas fa-envelope contact__icon"></i> Email
-                Address</label>
-            </div>
-            <div class="contact__input-group">
-              <textarea type="text" class="contact__input contact__text-area" id="message" rows="8" required></textarea>
-              <label class="contact__label" for="message"><i class="fas fa-comments contact__icon"></i> Your
-                Message</label>
-            </div>
-            <button class="contact__button button button--flex" type="submit">Submit <i
-                class="fas fa-paper-plane button__icon"></i></button>
+          <form action="https://formsubmit.co/636c06379a06c01d5f04679e405450aa" method="POST" class="contact__form" />
+          <div class="contact__input-group">
+            <input type="text" class="contact__input contact__name" id="name" name="name" required>
+            <label class="contact__label" for="name"><i class="fas fa-user contact__icon"></i> Your Name</label>
+          </div>
+          <div class="contact__input-group">
+            <input type="text" class="contact__input contact__number" id="number" name="number" required>
+            <label class="contact__label" for="number"><i class="fas fa-phone-square-alt contact__icon"></i> Phone
+              Number</label>
+          </div>
+          <div class="contact__input-group">
+            <input type="email" class="contact__input contact__email" id="email" name="email" required>
+            <label class="contact__label" for="email"><i class="fas fa-envelope contact__icon"></i> Email
+              Address</label>
+          </div>
+          <div class="contact__input-group">
+            <textarea type="text" class="contact__input contact__text-area" id="message" rows="8" name="message"
+              required></textarea>
+            <label class="contact__label" for="message"><i class="fas fa-comments contact__icon"></i> Your
+              Message</label>
+          </div>
+          <button class="contact__button button button--flex" type="submit">Submit <i
+              class="fas fa-paper-plane button__icon"></i></button>
           </form>
         </div>
 
