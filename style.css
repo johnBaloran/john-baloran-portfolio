@@ -158,6 +158,7 @@ video {
 
 .nav__toggle {
   font-size: 1.1rem;
+  margin-right: -5rem;
   cursor: pointer;
 }
 
@@ -631,6 +632,18 @@ video {
   margin-top: 8rem;
 }
 
+.contact__img-container {
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto 2rem;
+}
+.contact__img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
 .contact__info {
   margin-bottom: 1.5rem;
   padding: 0 1rem;
@@ -665,7 +678,7 @@ video {
 
 .contact__form-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -675,7 +688,8 @@ video {
 }
 .contact__input-group {
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -722,10 +736,6 @@ video {
   color: var(--primary-color);
   margin-right: 0.5rem;
   font-size: 1rem;
-}
-.contact__img {
-  border-radius: 50%;
-  padding: 2rem;
 }
 
 /* FOOTER */
@@ -845,6 +855,19 @@ video {
     width: 12rem;
   }
 
+  .contact__input:focus ~ .contact__label,
+  .contact__input:valid ~ .contact__label {
+    font-size: 0.6rem;
+    top: -1.8rem;
+  }
+
+  .contact__img-container {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto 2rem;
+  }
+
   .footer__copy {
     margin-top: 3rem;
   }
@@ -881,12 +904,20 @@ video {
   }
 
   .contact__label {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     top: 0.4rem;
   }
   .contact__input:focus ~ .contact__label,
   .contact__input:valid ~ .contact__label {
     font-size: 0.6rem;
+    top: -2rem;
+  }
+
+  .contact__img-container {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto 2rem;
   }
 }
 
@@ -978,6 +1009,13 @@ video {
     margin-top: 5rem;
   }
 
+  .contact__img-container {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto 2rem;
+  }
+
   .footer__container {
     padding-top: 3rem 0 3.5rem;
   }
@@ -1053,5 +1091,12 @@ video {
   .project__info {
     text-align: initial;
     flex-basis: 40%;
+  }
+
+  .contact__img-container {
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto 2rem;
   }
 }
