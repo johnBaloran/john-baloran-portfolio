@@ -180,6 +180,10 @@ video {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
   }
+  .nav__logo,
+  .nav__toggle {
+    font-size: 1.5rem;
+  }
 }
 
 .nav__list {
