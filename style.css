@@ -633,10 +633,6 @@ video {
 
 /* CONTACT */
 
-.contact {
-  margin-top: 8rem;
-}
-
 .contact__img-container {
   border-radius: 50%;
   width: 25rem;
@@ -863,6 +859,10 @@ video {
     font-size: 0.9rem;
   }
 
+  .contact {
+    margin-top: 15rem;
+  }
+
   .contact__input:focus ~ .contact__label,
   .contact__input:valid ~ .contact__label {
     font-size: 0.6rem;
@@ -1003,9 +1003,8 @@ video {
   }
 
   .testimonial__comment {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
-
   .testimonial__button--prev {
     left: -1.5rem;
   }
@@ -1099,6 +1098,10 @@ video {
   .project__info {
     text-align: initial;
     flex-basis: 40%;
+  }
+
+  .testimonial__comment {
+    font-size: 1.3rem;
   }
 
   .contact__img-container {
