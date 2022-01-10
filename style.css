@@ -859,7 +859,7 @@ video {
   .project__img-desktop {
     width: 12rem;
   }
-  .testimonial p {
+  .testimonial__comment {
     font-size: 0.9rem;
   }
 
