@@ -73,7 +73,9 @@ button {
 }
 img {
   max-width: 100%;
+  max-height: 100%;
   height: auto;
+  /* border: solid 1px red; */
 }
 
 video {
@@ -253,6 +255,8 @@ video {
 
 .home__img {
   border-radius: 50%;
+  width: 640px;
+  height: 640px;
 }
 
 .home__heart-btn {
@@ -467,16 +471,17 @@ video {
 
 .project__img-icons {
   display: flex;
-  width: 2.5rem;
+  width: 4rem;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: -20px;
+  top: -30px;
   right: -15px;
   color: var(--primary-color);
 }
 .project__img-icon {
   cursor: pointer;
+  font-size: 1.5rem;
 }
 .project__img-icon:hover,
 .project__img-icon:focus {
@@ -843,8 +848,8 @@ video {
   }
 
   .home__img-container {
-    width: 12rem;
-    height: 12rem;
+    width: 17rem;
+    height: 17rem;
   }
 
   .project__content {
@@ -853,6 +858,9 @@ video {
 
   .project__img-desktop {
     width: 12rem;
+  }
+  .testimonial p {
+    font-size: 0.9rem;
   }
 
   .contact__input:focus ~ .contact__label,
